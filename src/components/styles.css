@@ -1,0 +1,113 @@
+/* Main Container */
+.experience-timeline {
+  position: relative;
+  padding-top: 20px;
+  min-height: 100vh;
+  /* background-color: #111827; Dark background */
+}
+
+/* Vertical line for timeline on the left side */
+.experience-timeline .absolute {
+  width: 2px;
+  background: linear-gradient(to bottom, #9c27b0, #00bcd4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+/* Timeline Item Style */
+.timeline-item {
+  position: relative;
+  background-color: #1f2937; /* Dark gray background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  width: 80%; /* Reduced width */
+  margin-left: 70px; /* Adjust for space on the left for the icon */
+}
+
+/* For responsive design */
+@media (max-width: 1024px) {
+  .timeline-item {
+    width: 70%; /* Slightly larger for medium screens */
+    background-color: red;
+
+  }
+}
+
+@media (max-width: 640px) {
+  .timeline-item {
+    width: 85%;
+    background-color: red;
+  }
+}
+
+
+/* Timeline Item Style */
+.timeline-item {
+  position: relative;
+  background-color: #1f2937; /* Dark gray background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: 70px; /* Adjust for space on the left for the icon */
+}
+
+/* Card hover effect - 3D rotation */
+.timeline-item:hover {
+  transform: rotateY(10deg) scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Circular Icon Positioning */
+.timeline-item .absolute {
+  background: linear-gradient(to right, #9c27b0, #00bcd4);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the Icon Circle */
+.timeline-item:hover .absolute {
+  background: linear-gradient(to right, #ff4081, #00e5ff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Content style */
+.timeline-item .text-start {
+  padding-left: 60px; /* Space for icon */
+}
+
+h3 {
+  color: #f3f4f6; /* Lighter text for heading */
+}
+
+p {
+  color: #e5e7eb; /* Lighter text for description */
+}
+
+/* For responsive design */
+@media (max-width: 640px) {
+  .timeline-item {
+    width: 85%;
+  }
+}
