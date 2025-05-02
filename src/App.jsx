@@ -13,6 +13,7 @@ import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import ContactAs from './components/ContactAs'
 import TestimonialForm from './components/TestimonialForm'
+import Footer from './components/Footer'
 function App() {
 
 
@@ -28,6 +29,7 @@ function App() {
     <Testimonials />
     <ContactAs />
     <TestimonialForm />
+    <Footer />
     {/* <Contact /> */}
     </>
   )
