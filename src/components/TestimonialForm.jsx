@@ -73,7 +73,7 @@ const TestimonialForm = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="image"
-                    className="block text-sm text-gray-300 mb-2"
+                    className="block text-sm text-start text-gray-300 mb-2"
                   >
                     Image URL
                   </label>
@@ -91,7 +91,7 @@ const TestimonialForm = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="name"
-                    className="block text-sm text-gray-300 mb-2"
+                    className="block text-sm text-start text-gray-300 mb-2"
                   >
                     Name
                   </label>
@@ -109,7 +109,7 @@ const TestimonialForm = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="role"
-                    className="block text-sm text-gray-300 mb-2"
+                    className="block text-sm text-start text-gray-300 mb-2"
                   >
                     Role
                   </label>
@@ -119,7 +119,7 @@ const TestimonialForm = () => {
                     name="role"
                     value={formData.role}
                     onChange={handleChange}
-                    className="w-full bg-gray-900/50 border border-gray-600/50 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-300"
+                    className="w-full bg-gray-900/50 border border-gray-600/50 rounded-lg p-3  text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-300"
                     placeholder="Your Role"
                     required
                   />
@@ -127,7 +127,7 @@ const TestimonialForm = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="quote"
-                    className="block text-sm text-gray-300 mb-2"
+                    className="block text-sm text-start text-gray-300 mb-2"
                   >
                     Testimonial
                   </label>
@@ -145,7 +145,7 @@ const TestimonialForm = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="linkedin"
-                    className="block text-sm text-gray-300 mb-2"
+                    className="block text-sm text-start text-gray-300 mb-2"
                   >
                     LinkedIn URL
                   </label>
@@ -162,7 +162,7 @@ const TestimonialForm = () => {
                 <div className="mb-6">
                   <label
                     htmlFor="github"
-                    className="block text-sm text-gray-300 mb-2"
+                    className="block text-sm text-start text-gray-300 mb-2"
                   >
                     GitHub URL
                   </label>

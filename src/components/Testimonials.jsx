@@ -3,14 +3,14 @@ import React, { useState, useRef } from 'react';
 const testimonials = [
   {
     name: 'Atsede Tesfaye',
-    role: 'HR',
+    role: 'Project Manager',
     quote: 'Working with this team was a game-changer! Their attention to detail and innovative approach made the project a huge success.',
     image: '/testimoinals/Asuye.jpg',
     linkedin: 'https://www.linkedin.com/in/jane-doe',
     github: 'https://github.com/janedoe',
   },
   {
-    name: 'Abel Adisu',
+    name: 'Bekalu Tamirat',
     role: 'Java Developer',
     quote: 'The AI Summarizing Website delivered beyond expectations. It’s intuitive, fast, and incredibly useful for our users.',
     image: '/testimoinals/Abel Adisu IMAGE.JPG',
