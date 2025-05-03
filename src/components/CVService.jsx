@@ -81,7 +81,7 @@ const CVServices = () => {
       thumbnail: '/cvs/2025%20cv%20(1)-thumb.jpg',
       pdf: '/cvs/2025%20cv%20(1).pdf',
       type: 'pdf',
-      placeholder: '/cvs/pdf-placeholder.jpg',
+      placeholder: 'https://via.placeholder.com/300x400?text=PDF+Preview',
     },
     {
       id: 'updated-professional',
@@ -90,7 +90,7 @@ const CVServices = () => {
       thumbnail: '/cvs/Abel%20Adisu%20updated%20cv-thumb.jpg',
       pdf: '/cvs/Abel%20Adisu%20updated%20cv.pdf',
       type: 'pdf',
-      placeholder: '/cvs/pdf-placeholder.jpg',
+      placeholder: 'https://via.placeholder.com/300x400?text=PDF+Preview',
     },
   ];
 
@@ -163,19 +163,19 @@ const CVServices = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
                 onClick={() => openModal(design)}
               >
-                <div className="transform transition-transform duration-500 group-hover:-translate-z-8 group-hover:rotate-x-5 group-hover:rotate-y-5">
+                <div className="relative transform transition-transform duration-500 group-hover:-translate-z-8 group-hover:rotate-x-5 group-hover:rotate-y-5">
                   <img
                     src={design.thumbnail || design.placeholder}
                     alt={design.title}
-                    className="w-full h-40 sm:h-56 object-cover rounded-t-2xl z-10"
+                    className="w-full h-48 sm:h-72 object-contain rounded-t-2xl z-10 bg-gray-700/50"
                     onError={(e) => {
-                      console.error(`Failed to load image: ${design.thumbnail || design.placeholder}`);
-                      e.target.src = '/cvs/pdf-placeholder.jpg';
+                      console.error(`Failed to load image: ${design.thumbnail || design.placeholder}, Type: ${design.type}, ID: ${design.id}`);
+                      e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
                     }}
                   />
-                  <div className="p-3 sm:p-4">
-                    <h4 className="text-base sm:text-lg font-semibold text-white mb-1">{design.title}</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm line-clamp-2">{design.description}</p>
+                  <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md border-t border-white/20 p-3 sm:p-4 z-20">
+                    <h4 className="text-base sm:text-lg font-semibold text-white mb-1 text-shadow-sm">{design.title}</h4>
+                    <p className="text-gray-200 text-xs sm:text-sm line-clamp-2 text-shadow-sm">{design.description}</p>
                   </div>
                 </div>
                 <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-gradient animate-border-flow pointer-events-none" />
@@ -235,8 +235,8 @@ const CVServices = () => {
                 alt={selectedDesign.title}
                 className="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-4 z-10"
                 onError={(e) => {
-                  console.error(`Failed to load full image: ${selectedDesign.fullImage}`);
-                  e.target.src = '/cvs/pdf-placeholder.jpg';
+                  console.error(`Failed to load full image: ${selectedDesign.fullImage}, ID: ${selectedDesign.id}`);
+                  e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
                 }}
               />
             ) : (
@@ -246,8 +246,8 @@ const CVServices = () => {
                   alt={selectedDesign.title}
                   className="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-2 z-10"
                   onError={(e) => {
-                    console.error(`Failed to load thumbnail: ${selectedDesign.thumbnail || selectedDesign.placeholder}`);
-                    e.target.src = '/cvs/pdf-placeholder.jpg';
+                    console.error(`Failed to load thumbnail: ${selectedDesign.thumbnail || selectedDesign.placeholder}, ID: ${selectedDesign.id}`);
+                    e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
                   }}
                 />
                 <a
@@ -383,6 +383,9 @@ const CVServices = () => {
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+          }
+          .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
           }
         `}
       </style>
