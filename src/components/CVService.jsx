@@ -209,8 +209,8 @@ const CVServices = () => {
                       alt={design.title}
                       className="w-full max-w-[280px] mx-auto h-auto aspect-[9/12] object-contain z-10 bg-gray-700/50"
                       onError={(e) => {
-                        console.error(`Failed to load image: ${design.thumbnail || design.placeholder}, Type: ${design.type}, ID: ${design.id}`);
-                        e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
+                        // console.error(`Failed to load image: ${design.thumbnail || design.placeholder}, Type: ${design.type}, ID: ${design.id}`);
+                        // e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
                       }}
                     />
                   </div>

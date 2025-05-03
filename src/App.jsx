@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills '
+// import Blogs from './components/Blogs'
+import Blogs from './components/Blogs'
 import Exp from './components/Exp'
 import Service from './components/Service'
 import CVService from './components/CVService'
@@ -28,6 +30,8 @@ function App() {
     <Hero />
     <About />
     <Skills />
+    <Blogs />
+    {/* <Blogs /> */}
     <Exp />
     <Service />
     <CVService />

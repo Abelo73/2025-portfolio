@@ -34,7 +34,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative bg-gray-900 py-16 sm:py-24 overflow-hidden">
+    <section id="service" className="relative bg-gray-900 py-16 sm:py-24 overflow-hidden">
       {/* Animated Particle Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.15)_0%,transparent_70%)] animate-pulse-bg pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

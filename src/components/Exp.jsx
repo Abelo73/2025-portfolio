@@ -231,7 +231,7 @@ const ExperienceItem = ({ exp, index }) => {
 
 const Exp = () => {
   return (
-    <section className="py-16 px-6 bg-[#0f0f0f] text-gray-100" id="experience">
+    <section className="py-16 px-6 bg-[#0f0f0f] text-gray-100" id="expereince">
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <motion.h2
