@@ -458,7 +458,7 @@ const CVServices = () => {
           }
           .animate-pulse-bg {
             animation: pulse-bg 8s ease-in-out infinite;
-          }
+          } 
           .animate-pulse-button {
             animation: pulse-button 2s ease-in-out infinite;
           }
