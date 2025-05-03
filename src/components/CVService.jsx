@@ -1,6 +1,15 @@
 // src/components/CVServices.js
 import React, { useState, useEffect } from 'react';
-import { DocumentTextIcon, CheckCircleIcon, UserGroupIcon, XMarkIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import {
+  DocumentTextIcon,
+  CheckCircleIcon,
+  UserGroupIcon,
+  XMarkIcon,
+  PhoneIcon,
+  MagnifyingGlassPlusIcon,
+  MagnifyingGlassMinusIcon,
+  ArrowPathIcon,
+} from '@heroicons/react/24/outline';
 import { FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 
 const CVServices = () => {
@@ -106,22 +115,52 @@ const CVServices = () => {
   ];
 
   const [selectedDesign, setSelectedDesign] = useState(null);
+  const [zoomLevel, setZoomLevel] = useState(1.0);
 
-  const openModal = (design) => setSelectedDesign(design);
-  const closeModal = () => setSelectedDesign(null);
+  const openModal = (design) => {
+    setSelectedDesign(design);
+    setZoomLevel(1.0); // Reset zoom when opening modal
+  };
+  const closeModal = () => {
+    setSelectedDesign(null);
+    setZoomLevel(1.0); // Reset zoom when closing modal
+  };
 
-  // Handle Esc key to close modal
+  const zoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.25, 2.0));
+  const zoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.25, 0.5));
+  const resetZoom = () => setZoomLevel(1.0);
+
+  // Handle Esc key and backdrop click to close modal
   useEffect(() => {
     const handleEsc = (e) => e.key === 'Escape' && closeModal();
     window.addEventListener('keydown', handleEsc);
     return () => window.removeEventListener('keydown', handleEsc);
   }, []);
 
+  // Handle keyboard zoom (+/- keys)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedDesign) {
+        if (e.key === '+' || e.key === '=') zoomIn();
+        if (e.key === '-') zoomOut();
+        if (e.key === '0') resetZoom();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedDesign]);
+
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
     <section id="cv-services" className="relative bg-gray-900 py-16 sm:py-24 overflow-hidden">
       {/* Animated Radial Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.15)_0%,transparent_70%)] animate-pulse-bg pointer-events-none" />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-1 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-white">
@@ -155,24 +194,26 @@ const CVServices = () => {
           <h3 className="text-xl sm:text-2xl font-semibold text-white mb-8">
             Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 animate-gradient-text">CV Designs</span>
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 sm:gap-6 sm:max-w-[90vw] mx-auto">
             {cvDesigns.map((design, index) => (
               <div
                 key={design.id}
-                className="relative bg-gray-800/20 backdrop-blur-xl rounded-2xl border border-gray-600/20 overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.5)] transition-all duration-700 hover:shadow-[0_15px_40px_rgba(34,211,238,0.4)] group perspective-1000 animate-slide-in cursor-pointer min-h-0"
+                className="relative bg-gray-800/20 backdrop-blur-xl rounded-2xl border border-gray-600/20 overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.5)] transition-all duration-700 hover:shadow-[0_15px_40px_rgba(34,211,238,0.4)] group perspective-1000 animate-slide-in cursor-pointer"
                 style={{ animationDelay: `${index * 0.2}s` }}
                 onClick={() => openModal(design)}
               >
                 <div className="relative transform transition-transform duration-500 group-hover:-translate-z-8 group-hover:rotate-x-5 group-hover:rotate-y-5">
-                  <img
-                    src={design.thumbnail || design.placeholder}
-                    alt={design.title}
-                    className="w-full h-48 sm:h-72 object-contain rounded-t-2xl z-10 bg-gray-700/50"
-                    onError={(e) => {
-                      console.error(`Failed to load image: ${design.thumbnail || design.placeholder}, Type: ${design.type}, ID: ${design.id}`);
-                      e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
-                    }}
-                  />
+                  <div className="overflow-hidden rounded-t-2xl">
+                    <img
+                      src={design.thumbnail || design.placeholder}
+                      alt={design.title}
+                      className="w-full max-w-[280px] mx-auto h-auto aspect-[9/12] object-contain z-10 bg-gray-700/50"
+                      onError={(e) => {
+                        console.error(`Failed to load image: ${design.thumbnail || design.placeholder}, Type: ${design.type}, ID: ${design.id}`);
+                        e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
+                      }}
+                    />
+                  </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md border-t border-white/20 p-3 sm:p-4 z-20">
                     <h4 className="text-base sm:text-lg font-semibold text-white mb-1 text-shadow-sm">{design.title}</h4>
                     <p className="text-gray-200 text-xs sm:text-sm line-clamp-2 text-shadow-sm">{design.description}</p>
@@ -219,7 +260,10 @@ const CVServices = () => {
 
       {/* Modal for CV Design Preview */}
       {selectedDesign && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          onClick={handleBackdropClick}
+        >
           <div className="relative bg-gray-800/50 backdrop-blur-xl rounded-2xl p-6 sm:p-8 max-w-3xl w-full">
             <button
               onClick={closeModal}
@@ -230,30 +274,84 @@ const CVServices = () => {
             </button>
             <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">{selectedDesign.title}</h3>
             {selectedDesign.type === 'image' ? (
-              <img
-                src={selectedDesign.fullImage}
-                alt={selectedDesign.title}
-                className="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-4 z-10"
-                onError={(e) => {
-                  console.error(`Failed to load full image: ${selectedDesign.fullImage}, ID: ${selectedDesign.id}`);
-                  e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
-                }}
-              />
+              <div className="mb-4">
+                <div className="flex justify-center gap-2 mb-2">
+                  <button
+                    onClick={zoomIn}
+                    className="p-2 bg-gray-600 text-white rounded-full hover:bg-cyan-500 transition-colors"
+                    aria-label="Zoom in"
+                  >
+                    <MagnifyingGlassPlusIcon className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={zoomOut}
+                    className="p-2 bg-gray-600 text-white rounded-full hover:bg-cyan-500 transition-colors"
+                    aria-label="Zoom out"
+                  >
+                    <MagnifyingGlassMinusIcon className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={resetZoom}
+                    className="p-2 bg-gray-600 text-white rounded-full hover:bg-cyan-500 transition-colors"
+                    aria-label="Reset zoom"
+                  >
+                    <ArrowPathIcon className="w-5 h-5" />
+                  </button>
+                </div>
+                <div className="overflow-auto max-h-[60vh] flex justify-center">
+                  <img
+                    src={selectedDesign.fullImage}
+                    alt={selectedDesign.title}
+                    className="w-full max-w-[600px] h-auto object-contain rounded-lg transition-transform duration-300"
+                    style={{ transform: `scale(${zoomLevel})` }}
+                    onError={(e) => {
+                      console.error(`Failed to load full image: ${selectedDesign.fullImage}, ID: ${selectedDesign.id}`);
+                      e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
+                    }}
+                  />
+                </div>
+              </div>
             ) : (
               <div className="mb-4">
-                <img
-                  src={selectedDesign.thumbnail || selectedDesign.placeholder}
-                  alt={selectedDesign.title}
-                  className="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-2 z-10"
-                  onError={(e) => {
-                    console.error(`Failed to load thumbnail: ${selectedDesign.thumbnail || selectedDesign.placeholder}, ID: ${selectedDesign.id}`);
-                    e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
-                  }}
-                />
+                <div className="flex justify-center gap-2 mb-2">
+                  <button
+                    onClick={zoomIn}
+                    className="p-2 bg-gray-600 text-white rounded-full hover:bg-cyan-500 transition-colors"
+                    aria-label="Zoom in"
+                  >
+                    <MagnifyingGlassPlusIcon className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={zoomOut}
+                    className="p-2 bg-gray-600 text-white rounded-full hover:bg-cyan-500 transition-colors"
+                    aria-label="Zoom out"
+                  >
+                    <MagnifyingGlassMinusIcon className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={resetZoom}
+                    className="p-2 bg-gray-600 text-white rounded-full hover:bg-cyan-500 transition-colors"
+                    aria-label="Reset zoom"
+                  >
+                    <ArrowPathIcon className="w-5 h-5" />
+                  </button>
+                </div>
+                <div className="overflow-auto max-h-[60vh] flex justify-center">
+                  <img
+                    src={selectedDesign.thumbnail || selectedDesign.placeholder}
+                    alt={selectedDesign.title}
+                    className="w-full max-w-[600px] h-auto object-contain rounded-lg transition-transform duration-300"
+                    style={{ transform: `scale(${zoomLevel})` }}
+                    onError={(e) => {
+                      console.error(`Failed to load thumbnail: ${selectedDesign.thumbnail || selectedDesign.placeholder}, ID: ${selectedDesign.id}`);
+                      e.target.src = 'https://via.placeholder.com/300x400?text=Image+Missing';
+                    }}
+                  />
+                </div>
                 <a
                   href={selectedDesign.pdf}
                   download
-                  className="inline-block bg-gray-600 text-white py-2 px-4 rounded-lg text-sm"
+                  className="inline-block bg-gray-600 text-white py-2 px-4 rounded-lg text-sm mt-2"
                   aria-label={`Download ${selectedDesign.title} PDF`}
                 >
                   Download PDF Preview
