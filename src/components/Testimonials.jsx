@@ -144,7 +144,7 @@ const Testimonials = () => {
                         className="relative text-cyan-400 hover:text-cyan-300 transition-colors duration-300 group/icon"
                       >
                         <svg
-                          className="w-8 h-8 transform hover:scale-125 transition-transform duration-300"
+                          className="w-4 h-4 transform hover:scale-125 transition-transform duration-300"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -161,7 +161,7 @@ const Testimonials = () => {
                         className="relative text-cyan-400 hover:text-cyan-300 transition-colors duration-300 group/icon"
                       >
                         <svg
-                          className="w-8 h-8 transform hover:scale-125 transition-transform duration-300"
+                          className="w-4 h-4 transform hover:scale-125 transition-transform duration-300"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
