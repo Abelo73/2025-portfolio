@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const TestimonialForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
-    image: '',
+    image: null, // Change to null to store the file
     name: '',
     role: '',
     quote: '',
@@ -18,7 +19,7 @@ const TestimonialForm = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setFormData({
-      image: '',
+      image: null, // Reset the image
       name: '',
       role: '',
       quote: '',
@@ -34,14 +35,74 @@ const TestimonialForm = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (e.target.name === 'image') {
+      // If the image is selected, store the file in the form data
+      setFormData({ ...formData, image: e.target.files[0] });
+    } else {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Testimonial submitted:', formData);
-    handleCloseModal();
+  
+    const data = new FormData();
+    data.append('image', formData.image);
+    data.append('name', formData.name);
+    data.append('role', formData.role);
+    data.append('quote', formData.quote);
+    data.append('linkedin', formData.linkedin);
+    data.append('github', formData.github);
+  
+    // const backendUrl = process.env.REACT_APP_API_URL;
+    
+    axios.post(`https://portfolio-backend-2025-wddu.onrender.com/api/testimonials`, data, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+      .then((response) => {
+        console.log('Response from server:', response.data);
+        handleCloseModal();
+        alert('Testimonial submitted successfully!');
+      })
+      .catch((error) => {
+        console.error('Error submitting testimonial:', error);
+        alert('Failed to submit testimonial.');
+      });
   };
+  
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Testimonial submitted:', formData);
+
+  //   const data = new FormData();
+  //   data.append('image', formData.image); // Append image file
+  //   data.append('name', formData.name);
+  //   data.append('role', formData.role);
+  //   data.append('quote', formData.quote);
+  //   data.append('linkedin', formData.linkedin);
+  //   data.append('github', formData.github);
+
+  //   const backendUrl = ${process.env.REACT_APP_API_URL}
+  //   // Send the form data to the backend using Axios
+  //   axios.post(`${backendUrl}/api/testimonials`, data, {
+  //     headers: {
+  //       'Content-Type': 'multipart/form-data', // Set correct content type
+  //     },
+  //   })
+  //     .then((response) => {
+  //       console.log('Response from server:', response.data);
+  //       handleCloseModal();
+  //       // Optionally show a success message to the user
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error submitting testimonial:', error);
+  //       // Optionally show an error message to the user
+  //     });
+  // };
 
   return (
     <>
@@ -73,16 +134,15 @@ const TestimonialForm = () => {
                     htmlFor="image"
                     className="block text-xs text-start text-gray-300 mb-1"
                   >
-                    Image URL
+                    Upload Image
                   </label>
                   <input
-                    type="url"
+                    type="file"
                     id="image"
                     name="image"
-                    value={formData.image}
                     onChange={handleChange}
                     className="w-full bg-gray-900/50 border border-gray-600/50 rounded-lg p-2 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-300 text-xs sm:text-sm"
-                    placeholder="https://example.com/image.jpg"
+                    accept="image/*" // Optional: restrict to image files
                     required
                   />
                 </div>

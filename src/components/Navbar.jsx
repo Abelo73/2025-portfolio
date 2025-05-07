@@ -13,7 +13,7 @@ const navLinks = [
   {
     label: "More",
     dropdown: [
-      { href: "#experience", label: "Experience" }, // Fixed typo: "expereince" → "experience"
+      { href: "#expereince", label: "Experience" }, // Fixed typo: "expereince" → "experience"
       { href: "#service", label: "Service" },
       { href: "#cv-services", label: "CV Service" },
       { href: "#testimonials", label: "Testimonials" },
