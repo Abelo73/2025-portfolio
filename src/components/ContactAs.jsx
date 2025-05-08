@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactAs = () => {
   const [formData, setFormData] = useState({
@@ -6,16 +9,51 @@ const ContactAs = () => {
     email: '',
     message: '',
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Placeholder for form submission logic (e.g., API call)
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', message: '' });
+    setLoading(true);
+
+    try {
+      const response = await axios.post('https://portfolio-backend-2025-wddu.onrender.com/api/contact', formData);
+      toast.success(response.data, {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: 'dark',
+        style: {
+          background: 'linear-gradient(to right, #06b6d4, #9333ea)',
+          color: '#ffffff',
+          boxShadow: '0 0 10px rgba(34, 211, 238, 0.7)',
+        },
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      toast.error(error.response?.data || 'Failed to send message. Please try again.', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: 'dark',
+        style: {
+          background: 'linear-gradient(to right, #ef4444, #b91c1c)',
+          color: '#ffffff',
+          boxShadow: '0 0 10px rgba(239, 68, 68, 0.7)',
+        },
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -50,7 +88,7 @@ const ContactAs = () => {
                   </label>
                   <input
                     type="email"
-                    id="email"
+                    id="name"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
@@ -76,9 +114,12 @@ const ContactAs = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(34,211,238,0.7)]"
+                  disabled={loading}
+                  className={`w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(34,211,238,0.7)] ${
+                    loading ? 'opacity-50 cursor-not-allowed' : ''
+                  }`}
                 >
-                  Send Message
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
@@ -127,6 +168,7 @@ const ContactAs = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
       <style>
         {`
           @keyframes slide-up {

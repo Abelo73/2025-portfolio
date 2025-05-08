@@ -5,20 +5,22 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState('');
   const [testimonialsPerPage, setTestimonialsPerPage] = useState(getTestimonialsPerPage());
+  const [isLoading, setIsLoading] = useState(true); // New loading state
   const touchStartX = useRef(null);
 
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-
-        // const backendUrl = process.env.REACT_APP_API_URL || 'https://portfolio-backend-2025-wddu.onrender.com';
-        // const response = await fetch('http://localhost:8080/api/testimonials');
-        // const response = await fetch(`${backendUrl}/api/testimonials`);
-        const response = await fetch('https://portfolio-backend-2025-wddu.onrender.com/api/testimonials')
+        setIsLoading(true); // Start loading
+        const response = await fetch('https://portfolio-backend-2025-wddu.onrender.com/api/testimonials');
         const data = await response.json();
         setTestimonials(data);
       } catch (error) {
         console.error('Error fetching testimonials:', error);
+        // Fallback to sample data if fetch fails
+        setTestimonials(sampleTestimonials);
+      } finally {
+        setIsLoading(false); // End loading
       }
     };
     fetchTestimonials();
@@ -71,6 +73,58 @@ const Testimonials = () => {
     const start = currentIndex * testimonialsPerPage;
     return testimonials.slice(start, start + testimonialsPerPage);
   };
+
+  // Sample data for testing
+  const sampleTestimonials = [
+    {
+      id: 1,
+      name: "Atsede Tesfaye",
+      role: "Project Manager",
+      quote: "Amazing platform to showcase my skills!",
+      image: "/testimoinals/Atsded test.jpg",
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+    },
+    {
+      id: 2,
+      name: "Tsega Splomon",
+      role: "Software Developer",
+      quote: "The design tools are incredibly intuitive.",
+      image: "/testimoinals/Tsega Solomon.jpg",
+      linkedin: "https://linkedin.com/in/bobsmith",
+      github: "https://github.com/bobsmith",
+    },
+    {
+      id: 3,
+      name: "Mekides Ushule",
+      role: "Journalist",
+      quote: "Great community and support!",
+      image: "/testimoinals/moso.jpg",
+      linkedin: "https://linkedin.com/in/claradavis",
+      github: "https://github.com/claradavis",
+    },
+    {
+      id: 4,
+      name: "Heaven Kokobie",
+      role: "Software Engineer",
+      quote: "Highly recommend this for portfolio building.",
+      image: "/testimoinals/heaven.png",
+      linkedin: "https://linkedin.com/in/davidlee",
+      github: "https://github.com/davidlee",
+    },
+  ];
+
+  if (isLoading) {
+    return (
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-black text-white min-h-screen flex items-center justify-center">
+        <div className="relative">
+          <div className="w-16 h-16 border-4 border-t-4 border-cyan-400 border-solid rounded-full animate-spin"></div>
+          <div className="w-12 h-12 border-4 border-t-4 border-purple-600 border-solid rounded-full absolute top-2 left-2 animate-spin-slow"></div>
+          <p className="text-center text-cyan-300 mt-4 animate-pulse">Loading Testimonials...</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-900 to-black text-white min-h-screen">
@@ -153,22 +207,21 @@ const Testimonials = () => {
             ))}
           </div>
 
-
           {/* Navigation */}
           <div className="mt-8 flex justify-center space-x-4">
-  <button
-    onClick={handlePrev}
-    className="bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
-  >
-    Prev
-  </button>
-  <button
-    onClick={handleNext}
-    className="bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
-  >
-    Next
-  </button>
-</div>
+            <button
+              onClick={handlePrev}
+              className="bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
+            >
+              Prev
+            </button>
+            <button
+              onClick={handleNext}
+              className="bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
+            >
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </section>
