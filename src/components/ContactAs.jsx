@@ -68,7 +68,7 @@ const ContactAs = () => {
               <h3 className="text-2xl font-bold text-cyan-300 mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
-                  <label htmlFor="name" className="block text-sm text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-start text-sm text-gray-300 mb-2">
                     Name
                   </label>
                   <input
@@ -83,7 +83,7 @@ const ContactAs = () => {
                   />
                 </div>
                 <div className="mb-6">
-                  <label htmlFor="email" className="block text-sm text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-start text-sm text-gray-300 mb-2">
                     Email
                   </label>
                   <input
@@ -98,7 +98,7 @@ const ContactAs = () => {
                   />
                 </div>
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-sm text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-start text-sm text-gray-300 mb-2">
                     Message
                   </label>
                   <textarea
@@ -115,9 +115,8 @@ const ContactAs = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(34,211,238,0.7)] ${
-                    loading ? 'opacity-50 cursor-not-allowed' : ''
-                  }`}
+                  className={`w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(34,211,238,0.7)] ${loading ? 'opacity-50 cursor-not-allowed' : ''
+                    }`}
                 >
                   {loading ? 'Sending...' : 'Send Message'}
                 </button>
