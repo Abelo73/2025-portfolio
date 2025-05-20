@@ -1,0 +1,88 @@
+{
+  "resources": [
+    {
+      "url": "/api/invoice/receipt/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Filter invoices based on specific criteria in the EIRP system."
+    },
+    {
+      "url": "/api/invoice/receipt/filterPortal",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Filter invoices based on specific criteria in the EIRP system."
+    },
+    {
+      "url": "/api/invoice/eirp/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Filter invoices based on specific criteria in the EIRP system."
+    },
+    {
+      "url": "/api/invoice/eirp/tin",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Retrieve invoices associated with a specific Tax Identification Number (TIN)."
+    },
+    {
+      "url": "/api/invoice/eirp/irn",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Retrieve invoices by Invoice Reference Number (IRN) in the EIRP system."
+    },
+    {
+      "url": "/api/invoice/download-invoice",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Retrieve invoices by Invoice Reference Number (IRN) in the EIRP system."
+    },
+    {
+      "url": "/api/invoice/eirp/mark",
+      "scope": "POST",
+      "allowed_roles": "allinone,MARK_UNMARK_INVOICES",
+      "description": "Mark an invoice in the EIRP system, potentially indicating a status change."
+    },
+    {
+      "url": "/api/invoice/eirp/unMark",
+      "scope": "POST",
+      "allowed_roles": "allinone,MARK_UNMARK_INVOICES",
+      "description": "un Mark an invoice in the EIRP system, potentially indicating a status change."
+    },
+    {
+      "url": "/api/invoice/eirp/filterPortal",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Filter invoices specifically for the portal view in the EIRP system."
+    },
+    {
+      "url": "/api/invoice/findall_files",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "fetch uploaded invoices."
+    },
+    {
+      "url": "/api/invoice/upload-excel-invoice",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPLOAD_INVOICES",
+      "description": "uploading bulk invoice"
+    },
+    {
+      "url": "/api/invoice/failedAndAcceptedCount",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Retrieve the count of failed and accepted invoices in the system."
+    },
+    {
+      "url": "/api/invoice/receipt/wzhold/filterPortal",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Retrieve the count of failed and accepted invoices in the system."
+    },
+    {
+      "url": "/api/invoice/receipt/wzhold/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_INVOICES",
+      "description": "Retrieve the count of failed and accepted invoices in the system."
+    }
+  ]
+}

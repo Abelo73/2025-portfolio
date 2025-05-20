@@ -1,0 +1,136 @@
+{
+  "resources": [
+    {
+      "url": "/api/tickets/messages/portal",
+      "scope": "POST",
+      "allowed_roles": "CREATE_TICKET",
+      "description": "Submit a message for a portal ticket."
+    },
+    {
+      "url": "/api/tickets/messages/backoffice",
+      "scope": "POST",
+      "allowed_roles": "CREATE_TICKET",
+      "description": "Submit a message for a backoffice ticket."
+    },
+    {
+      "url": "/api/tickets/backoffice",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve all backoffice tickets."
+    },
+    {
+      "url": "/api/tickets/portal",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve all portal tickets."
+    },
+    {
+      "url": "/api/tickets",
+      "scope": "POST",
+      "allowed_roles": "CREATE_TICKET",
+      "description": "Register a new ticket."
+    },
+    {
+      "url": "/api/tickets/assign",
+      "scope": "PUT",
+      "allowed_roles": "ASSIGN_TICKET",
+      "description": "Assign a ticket to a user."
+    },
+    {
+      "url": "/api/tickets/close",
+      "scope": "PUT",
+      "allowed_roles": "CLOSE_TICKET",
+      "description": "Close a ticket."
+    },
+    {
+      "url": "/api/tickets/update",
+      "scope": "PUT",
+      "allowed_roles": "UPDATE_TICKET",
+      "description": "Update ticket details."
+    },
+    {
+      "url": "/api/tickets/request/count",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve ticket count by status."
+    },
+    {
+      "url": "/api/tickets/request/count/my",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve ticket count by status for the current user."
+    },
+    {
+      "url": "/api/tickets/search_by_id",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Search for a ticket by its ID."
+    },
+    {
+      "url": "/api/tickets/ticket-settings",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve ticket settings."
+    },
+    {
+      "url": "/api/tickets/ticket-settings/update",
+      "scope": "PUT",
+      "allowed_roles": "UPDATE_TICKET",
+      "description": "Update ticket settings."
+    },
+    {
+      "url": "/api/tickets/ticket-settings/delete",
+      "scope": "DELETE",
+      "allowed_roles": "DELETE_TICKET",
+      "description": "Delete ticket settings."
+    },
+    {
+      "url": "/api/tickets/ticket-settings/search",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve ticket settings by ID."
+    },
+    {
+      "url": "/api/tickets/sync",
+      "scope": "POST",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Synchronize users with tickets."
+    },
+    {
+      "url": "/api/tickets/upload-attachment",
+      "scope": "POST",
+      "allowed_roles": "UPLOAD_ATTACHMENT",
+      "description": "upload attachment  for  tickets."
+    },
+    {
+      "url": "/api/tickets/escalate",
+      "scope": "POST",
+      "allowed_roles": "ESCALATE_TICKET",
+      "description": "escalate tickets."
+    },
+    {
+      "url": "/api/tickets/escalate_rule/create",
+      "scope": "POST",
+      "allowed_roles": "ESCALATE_TICKET",
+      "description": "create escalate rules."
+    },
+    {
+      "url": "/api/tickets/escalate_rule/update",
+      "scope": "PUT",
+      "allowed_roles": "ESCALATE_TICKET",
+      "description": "create escalate rules."
+    },
+    {
+      "url": "/api/tickets/escalate_rule/find",
+      "scope": "GET",
+      "allowed_roles": "ESCALATE_TICKET",
+      "description": "escalate Rules."
+    },
+    {
+      "url": "/api/tickets/get-attachment",
+      "scope": "GET",
+      "allowed_roles": "READ_TICKETS",
+      "description": "Retrieve all attachment."
+    }
+  ]
+}

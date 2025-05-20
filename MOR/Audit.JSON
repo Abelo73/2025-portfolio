@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "url": "/api/audit/request",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_AUDIT",
+      "description": "Retrieve a list of audit requests made in the system."
+    },
+    {
+      "url": "/api/audit/request/tin",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_AUDIT",
+      "description": "Retrieve audit requests associated with a specific Tax Identification Number (TIN)."
+    },
+    {
+      "url": "/api/audit/job/status",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_AUDIT",
+      "description": "Check the status of audit-related jobs or processes in the system."
+    },
+    {
+      "url": "/api/audit/request/add",
+      "scope": "POST",
+      "allowed_roles": "allinone,ADD_NEW_AUDIT_REQUEST",
+      "description": "Approve audit"
+    },
+    {
+      "url": "/api/audit/request/approve",
+      "scope": "POST",
+      "allowed_roles": "allinone,AUDIT_REQUEST_APPROVAL",
+      "description": "Approve audit requests"
+    }
+  ]
+}

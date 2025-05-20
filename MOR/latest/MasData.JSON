@@ -1,0 +1,232 @@
+{
+  "resources": [
+    {
+      "url": "/api/EIRPMasterData/createType",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_MASTER_DATA",
+      "description": "Create a new master data type within the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/request",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Fetch all rule requests."
+    },
+    {
+      "url": "/api/EIRPMasterData/name",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Searches rule by rule name."
+    },
+    {
+      "url": "/api/EIRPMasterData/update",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPDATE_MASTER_DATA",
+      "description": "Updates rule"
+    },
+    {
+      "url": "/api/EIRPMasterData/approve",
+      "scope": "POST",
+      "allowed_roles": "allinone,APPROVE_MASTER_DATA",
+      "description": "Approves approval request."
+    },
+    {
+      "url": "/api/EIRPMasterData/cancel",
+      "scope": "POST",
+      "allowed_roles": "allinone,CANCEL_MASTER_DATA",
+      "description": "Cancel approval request."
+    },
+    {
+      "url": "/api/EIRPMasterData/request/name",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Searches rule Temp by rule name."
+    },
+    {
+      "url": "/api/EIRPMasterData/search",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Filters rules by rule name, type, category, request status."
+    },
+    {
+      "url": "/api/EIRPMasterData/request/search",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Filters rules Temps by rule name, type, category, request status."
+    },
+    {
+      "url": "/api/EIRPMasterData/request_by_id",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Search rules Temps by rule temp id."
+    },
+    {
+      "url": "/api/EIRPMasterData/request_by_rule_id",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Search rules by temp id."
+    },
+    {
+      "url": "/api/EIRPMasterData/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_MASTER_DATA",
+      "description": "creates rules."
+    },
+    {
+      "url": "/api/EIRPMasterData",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "Fetch all rules with pagination."
+    },
+    {
+      "url": "/api/EIRPMasterData/createMasterData",
+      "scope": "POST",
+      "allowed_roles": "allinone,CANCEL_MASTER_DATA",
+      "description": "Create master data the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/viewExistingMasterData",
+      "scope": "GET",
+      "allowed_roles": "allinone,CREATE_MASTER_DATA",
+      "description": "View master data the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/viewExistingMasterDataTypes",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "View master data  type the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/updateMasterData",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPDATE_MASTER_DATA",
+      "description": "update master data the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/updateMasterDataType",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPDATE_MASTER_DATA",
+      "description": "update master data type the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMasterData",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMData",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMDataCode",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data by code in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMDataType",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data by type in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/updateMasterDataGroup",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPDATE_MASTER_DATA",
+      "description": "Updates master data Groups in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMasterDataTypeName",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data by name in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMasterDataTypeUID",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data by uuid in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/getDataByMasterId",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data by id in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchMDataTypeName",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data by id in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/searchGroups",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_MASTER_DATA",
+      "description": "search master data Groups in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/createMasterDataGroup",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_MASTER_DATA",
+      "description": "Creates master data Groups in the EIRP system."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/all",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_RECEIPTS",
+      "description": "Fetches all Reciept rules."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/approve",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_RECEIPTS",
+      "description": "Approves Receipt rule request."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/request/search",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_RECEIPTS",
+      "description": "Searchs all pending Receipt rule request."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/search",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_RECEIPTS",
+      "description": "Updates Receipt rule request."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_RECEIPTS",
+      "description": "Create Reciept rules."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/add",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_RECEIPTS",
+      "description": "Create Reciept rules."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/find",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_RECEIPTS",
+      "description": "Fetches all Reciept rules."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/update",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPDATE_RECEIPTS",
+      "description": "Updates Receipt rule request."
+    },
+    {
+      "url": "/api/EIRPMasterData/receipt/cancel",
+      "scope": "POST",
+      "allowed_roles": "allinone,CANCEL_RECEIPTS",
+      "description": "Updates Receipt rule request."
+    }
+  ]
+}

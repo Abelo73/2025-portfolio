@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="bg-gray-900 text-gray-300 py-16 px-4 mt-20 border-t-4 border-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-fadeIn">
+    <footer id="footer" className=" text-gray-300 py-16 px-4 mt-20 border-t-4 border-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-fadeIn">
 
       {/* Upper part */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mb-10">
@@ -27,8 +27,8 @@ const Footer = () => {
         </div>
 
         {/* Back to top */}
-        <button 
-          onClick={scrollToTop} 
+        <button
+          onClick={scrollToTop}
           className="mt-6 md:mt-0 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full transition transform hover:scale-110"
         >
           <FaArrowUp />

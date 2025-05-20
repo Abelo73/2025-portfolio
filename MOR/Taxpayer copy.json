@@ -1,0 +1,1090 @@
+{
+  "resources": [
+    {
+      "url": "/api/taxpayer/notify/username",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper,invoice only",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitMain/create",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitMain/update",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitEstablishment/create",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitEstablishment/update",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/main/find",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/main/find/id",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/main/filter",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/main/add",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/main/update",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/establishment/find",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/establishment/find/id",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/establishment/filter",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/establishment/add",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/limit/establishment/update",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,test rule 102,test rule 11,test rule 1088,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/testAccount",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/sources/systemNumbers",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,casher,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/sources/permitNumbers",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,casher,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/fetch/Taxpayer",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve pending approval requests."
+    },
+    {
+      "url": "/api/taxpayer/detail/portal",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve a list of all taxpayer details using tin."
+    },
+    {
+      "url": "/api/taxpayer/detail",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve a list of all taxpayer details using tin."
+    },
+    {
+      "url": "/api/taxpayer/sigtas/search",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get taxpayers for checker user."
+    },
+    {
+      "url": "/api/taxpayer/sigtas/detail",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Retrieve a list of all taxpayer details using tin."
+    },
+    {
+      "url": "/api/taxpayer/find",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get taxpayers for checker user."
+    },
+    {
+      "url": "/api/taxpayer/maker/find",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get taxpayers for maker user."
+    },
+    {
+      "url": "/api/taxpayer/account",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get currently authenticated user."
+    },
+    {
+      "url": "/api/taxpayer/id",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get taxpayer by id."
+    },
+    {
+      "url": "/api/taxpayer/username",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get taxpayer by username."
+    },
+    {
+      "url": "/api/taxpayer",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Add a new taxpayer from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/status/count",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get status count for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/request/count",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get request count of taxpayers."
+    },
+    {
+      "url": "/api/taxpayer/request/count/my",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get request count of taxpayers for a specific user."
+    },
+    {
+      "url": "/api/taxpayer/otp",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get otp for self onboarding taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/otp/verify",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Verify and self onboard new taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/authority",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get authorities for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/user/status",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user by status."
+    },
+    {
+      "url": "/api/taxpayer/user",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user by tin."
+    },
+    {
+      "url": "/api/taxpayer/user/tin",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user by tin."
+    },
+    {
+      "url": "/api/taxpayer/user/filter",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user by some filtering criteria."
+    },
+    {
+      "url": "/api/taxpayer/user/detail",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user detail by some tin."
+    },
+    {
+      "url": "/api/taxpayer/user/backoffice/id",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user by id for backoffice."
+    },
+    {
+      "url": "/api/taxpayer/user/portal/id",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user by id for portal."
+    },
+    {
+      "url": "/api/taxpayer/user/admin/search",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get user for admin."
+    },
+    {
+      "url": "/api/taxpayer/refresh",
+      "scope": "POST",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Refersh Tax Payer."
+    },
+    {
+      "url": "/api/taxpayer/maker/create",
+      "scope": "POST",
+      "allowed_roles": "CREATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Reset request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/reset",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Reset request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/enable",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Unblock request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/disable",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/suspend",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/release",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/deregister",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/restore",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/create/subUser",
+      "scope": "POST",
+      "allowed_roles": "CREATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Create request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/update/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Update request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/reset/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Reset request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/enable/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Unblock request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/disable/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/suspend/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/release/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/deregister/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/restore/subUser",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/create/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "CREATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Create request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/update/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Update request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/reset/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Reset request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/enable/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Unblock request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/disable/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/suspend/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/release/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/deregister/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/maker/restore/subUser/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Block request for taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/create",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/reset",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/enable",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/disable",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/suspend",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "suspend approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/release",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "release approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/deregister",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/restore",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/create_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/update_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/reset_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/enable_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/disable_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/suspend_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "suspend subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/release_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "release subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/deregister_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/restore_sub_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/create_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/edit_required_actions",
+      "scope": "PUT",
+      "allowed_roles": "UPDATE_TAXPAYER,ADD_NEW_AUDIT_REQUEST,admin,UPDATE_2FA,allinone,Hyper",
+      "description": "edit required action for specfic user."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/update_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/reset_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/enable_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/disable_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/suspend_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "suspend subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/release_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "release subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/deregister_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Taxpayer/restore_sub",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/sources/check",
+      "scope": "GET",
+      "allowed_roles": "READ_TAXPAYER,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create approval requests."
+    },
+    {
+      "url": "/api/taxpayer/fetch/Source",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create approval requests."
+    },
+    {
+      "url": "/api/taxpayer/sources/status",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sources by status."
+    },
+    {
+      "url": "/api/taxpayer/sources/id",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sources by id."
+    },
+    {
+      "url": "/api/taxpayer/sources/establishment/id",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sources by establishment id."
+    },
+    {
+      "url": "/api/taxpayer/sources/filter",
+      "scope": "POST",
+      "allowed_roles": "allinone,READ_SOURCE,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Filter sources based on specific criteria."
+    },
+    {
+      "url": "/api/taxpayer/sources/status/username",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sources by status."
+    },
+    {
+      "url": "/api/taxpayer/sources/status/systemNo",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sources by systemNo."
+    },
+    {
+      "url": "/api/taxpayer/sources/request/count/my",
+      "scope": "GET",
+      "allowed_roles": "READ_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sources request count."
+    },
+    {
+      "url": "/api/taxpayer/sources/create",
+      "scope": "POST",
+      "allowed_roles": "CREATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Add source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/reset",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/enable",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE, allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/disable",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/deregister",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/restore",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/create/portal",
+      "scope": "POST",
+      "allowed_roles": "CREATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Add source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/reset/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/enable/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/disable/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/deregister/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/restore/portal",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore source from backoffice."
+    },
+    {
+      "url": "/api/taxpayer/sources/enterprise/disable",
+      "scope": "POST",
+      "allowed_roles": "CREATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create approval requests."
+    },
+    {
+      "url": "/api/taxpayer/sources/establishment/disable",
+      "scope": "POST",
+      "allowed_roles": "CREATE_SOURCE,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/create_source_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/reset_source_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/enable_source_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/disable_source_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/deregister_source_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/restore_source_portal",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/create_source",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/reset_source",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "reset subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/enable_source",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "enable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/disable_source",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "disable subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/deregister_source",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "deregister subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/approve/Source/restore_source",
+      "scope": "POST",
+      "allowed_roles": "APPROVE_SOURCE,allinone,judge ,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "restore subuser approval requests."
+    },
+    {
+      "url": "/api/taxpayer/fetch/LimitTaxPayer",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/fetch/LimitSectorDefault",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch LimitSectorDefault  limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/category/default/filter",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch category  limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/sector/default/filter",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/default/filter",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch default  limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/size/default/filter",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch size  limit."
+    },
+    {
+      "url": "/api/taxpayer/fetch/LimitSizeDefault",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch LimitSizeDefault  limit."
+    },
+    {
+      "url": "/api/taxpayer/fetch/LimitCategoryDefault",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch LimitSizeDefault  limit."
+    },
+    {
+      "url": "/api/taxpayer/fetch/LimitDefault",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch LimitDefault."
+    },
+    {
+      "url": "/api/taxpayer/limit/category/default/find",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get Limit category."
+    },
+    {
+      "url": "/api/taxpayer/limit/category/default/find/id",
+      "scope": "POST",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Find Limit category by limit id."
+    },
+    {
+      "url": "/api/taxpayer/limit/category/default/update",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Update Limit category by limit id."
+    },
+    {
+      "url": "/api/taxpayer/limit-sequence/find",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch limit sequence."
+    },
+    {
+      "url": "/api/taxpayer/limit-sequence/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Add limit sequence."
+    },
+    {
+      "url": "/api/taxpayer/limit-sequence/update",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update limit sequence."
+    },
+    {
+      "url": "/api/taxpayer/limit-tax-payer/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "add custom taxpayer limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-tax-payer/approve",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "add custom taxpayer limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-tax-payer/cancel",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "cancel  custom taxpayer limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-tax-payer/fetch-temp",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch temp custom taxpayer limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-tax-payer/fetch",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch  custom taxpayer limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-tax-payer/update",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch  custom taxpayer limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/default/find",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get default limits."
+    },
+    {
+      "url": "/api/taxpayer/limit/default/find/id",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get default limit single."
+    },
+    {
+      "url": "/api/taxpayer/limit/default/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "add default limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/default/update",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Update default limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/sector/default/find",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sector limits."
+    },
+    {
+      "url": "/api/taxpayer/limit/sector/default/find/id",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get sector limit single."
+    },
+    {
+      "url": "/api/taxpayer/limit/sector/default/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "add sector limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/sector/default/update",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Update sector limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/size/default/find/id",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get size limit single."
+    },
+    {
+      "url": "/api/taxpayer/limit/size/default/find",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Get size limit single."
+    },
+    {
+      "url": "/api/taxpayer/limit/size/default/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "add size limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/size/default/update",
+      "scope": "POST",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Update size limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-max-cancellation/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "Add time frame limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-max-cancellation/all",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch time frame limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-max-cancellation/by-id",
+      "scope": "GET",
+      "allowed_roles": "READ_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch time frame limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-max-cancellation/update",
+      "scope": "PUT",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update time frame limit."
+    },
+    {
+      "url": "/api/taxpayer/limit-max-cancellation/delete",
+      "scope": "DELETE",
+      "allowed_roles": "UPDATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "fetch time frame limit."
+    },
+    {
+      "url": "/api/taxpayer/limit/category/default/add",
+      "scope": "POST",
+      "allowed_roles": "CREATE_LIMIT,allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "add sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitTaxPayer/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create limit taxpayer."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitSectorDefault/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitSizeDefault/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitCategoryDefault/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitDefault/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "create sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitTaxPayer/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update sector  limit."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitSectorDefault/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update LimitSectorDefault."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitSizeDefault/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update LimitSizeDefault."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitCategoryDefault/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update LimitCategoryDefault."
+    },
+    {
+      "url": "/api/taxpayer/approve/LimitDefault/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,judge ,APPROVE_SOURCE,APPROVE_LIMIT,ADD_NEW_AUDIT_REQUEST,admin,Hyper",
+      "description": "update LimitDefault."
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "resources": [
+    {
+      "url": "/api/roleaccess/session/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of sessions"
+    },
+    {
+      "url": "/api/roleaccess/fetch/UserRegisterDto",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "get acess entity"
+    },
+    {
+      "url": "/api/roleaccess/session/read_by_id",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a one of sessions"
+    },
+    {
+      "url": "/api/roleaccess/users/all_users",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all users within the system."
+    },
+    {
+      "url": "/api/roleaccess/users/user_search",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all users within the system."
+    },
+    {
+      "url": "/api/roleaccess/users/search_by_firstName",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all users by first name within the system."
+    },
+    {
+      "url": "/api/roleaccess/users/all_roles",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all roles available in the system."
+    },
+    {
+      "url": "/api/roleaccess/by-region",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all roles available in the system."
+    },
+    {
+      "url": "/api/roleaccess/get_endpoints",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all roles available in the system."
+    },
+    {
+      "url": "/api/roleaccess/get_endpointsby_role",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all roles available in the system."
+    },
+    {
+      "url": "/api/roleaccess/users/search_by_lastName",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all users by last name within the system."
+    },
+    {
+      "url": "/api/roleaccess/users/search_by_email",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all users by email within the system."
+    },
+    {
+      "url": "/api/roleaccess/users/user_detail",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a DETAIL of a user within the system."
+    },
+    {
+      "url": "/api/roleaccess/users/all_groups",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a list of all user groups in the system."
+    },
+    {
+      "url": "/api/roleaccess/users/groups_search",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a single searched groups of all groups in the system."
+    },
+    {
+      "url": "/api/roleaccess/roleaccess_search",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a single searched roleacess of all groups in the system."
+    },
+    {
+      "url": "/api/roleaccess/sendOtp",
+      "scope": "GET",
+      "allowed_roles": "allinone,SEND_OTP",
+      "description": "Retrieve a single searched groups of all groups in the system."
+    },
+    {
+      "url": "/api/roleaccess/users/roles_search",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve a  searched role."
+    },
+    {
+      "url": "/api/roleaccess/groups",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve details of all groups within the system."
+    },
+    {
+      "url": "/api/roleaccess/groups_and_associated_roles",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve details of all groups with associated roles within the system."
+    },
+    {
+      "url": "/api/roleaccess/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Read the details of a specific role access entry."
+    },
+    {
+      "url": "/api/roleaccess/roleacess_detail",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Read the details of a specific role access entry."
+    },
+    {
+      "url": "/api/roleaccess/tax_center/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve details of a specific tax center."
+    },
+    {
+      "url": "/api/roleaccess/tax_center/read/search_by_id",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve details of a specific tax center."
+    },
+    {
+      "url": "/api/roleaccess/users/group_detail",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "Retrieve detailed information about a specific user group."
+    },
+    {
+      "url": "/api/roleaccess/wereda/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all paginated wereda"
+    },
+    {
+      "url": "/api/roleaccess/wereda/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all filtered wereda"
+    },
+    {
+      "url": "/api/roleaccess/zone/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all filtered zone"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all filtered Tax authority"
+    },
+    {
+      "url": "/api/roleaccess/tax_center/filter",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all filtered tax center"
+    },
+    {
+      "url": "/api/roleaccess/tax_center/read_all",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all  tax center"
+    },
+    {
+      "url": "/api/roleaccess/wereda/read_all",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all wereda"
+    },
+    {
+      "url": "/api/roleaccess/wereda/read_by_id",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching one wereda"
+    },
+    {
+      "url": "/api/roleaccess/zone/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all zones"
+    },
+    {
+      "url": "/api/roleaccess/zone/read_all",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching all zones"
+    },
+    {
+      "url": "/api/roleaccess/zone/read_by_id",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "fetching one zones"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/read_by_type",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "get tax authority type"
+    },
+    {
+      "url": "/api/roleaccess/tax_center/read_self",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "get tax ceneter"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "read  paginated authority"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/read_all",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "read non  paginated all authority"
+    },
+    {
+      "url": "/api/roleaccess/region/read",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "read all regions"
+    },
+    {
+      "url": "/api/roleaccess/region/read-filtered-all",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "read all regions"
+    },
+    {
+      "url": "/api/roleaccess/region/read/filtered",
+      "scope": "GET",
+      "allowed_roles": "allinone,READ_ROLE_ACCESS",
+      "description": "read all regions"
+    },
+    {
+      "url": "/api/access/create_user",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "create user"
+    },
+    {
+      "url": "/api/roleaccess/approve/UserRegisterDto/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "update approval requests."
+    },
+    {
+      "url": "/api/roleaccess/approve/UserRegisterDto/disable",
+      "scope": "POST",
+      "allowed_roles": "allinone,DISABLE_ROLE_ACCESS",
+      "description": "Action Approval"
+    },
+    {
+      "url": "/api/roleaccess/approve/UserRegisterDto/enable",
+      "scope": "POST",
+      "allowed_roles": "allinone,ENABLE_ROLE_ACCESS",
+      "description": "Action Approval"
+    },
+    {
+      "url": "/api/roleaccess/user/disable",
+      "scope": "PUT",
+      "allowed_roles": "allinone,DISABLE_ROLE_ACCESS",
+      "description": "Approveing action request"
+    },
+    {
+      "url": "/api/roleaccess/user/enable",
+      "scope": "PUT",
+      "allowed_roles": "allinone,ENABLE_ROLE_ACCESS",
+      "description": "Approveing action request"
+    },
+    {
+      "url": "/api/roleaccess/session/edit_session",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "update session"
+    },
+    {
+      "url": "/api/roleaccess/session/create_session",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "update session"
+    },
+    {
+      "url": "/api/roleaccess/create_auth",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "Retrieve a list of all roles available in the system."
+    },
+    {
+      "url": "/api/roleaccess/update_endpoints_by_role",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Update an existing endpoints access entry."
+    },
+    {
+      "url": "/api/roleaccess/create_user",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "create an new user ."
+    },
+    {
+      "url": "/api/roleaccess/edit_user",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "edit user ."
+    },
+    {
+      "url": "/api/roleaccess/create_role",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "create an new role ."
+    },
+    {
+      "url": "/api/roleaccess/reset-password",
+      "scope": "POST",
+      "allowed_roles": "allinone,RESET_PASSWORD",
+      "description": "Change password thin the system."
+    },
+    {
+      "url": "/api/roleaccess/user/generate-temporary-password",
+      "scope": "POST",
+      "allowed_roles": "allinone,GENERATE_TEMPORARY_PASSWORD",
+      "description": "Generates the temporary password and send in email that allows the user to reset the password."
+    },
+    {
+      "url": "/api/roleaccess/group/update_group_roles",
+      "scope": "POST",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Updates roles that is associated with each groups within the system."
+    },
+    {
+      "url": "/api/roleaccess/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "Create a new role access entry in the system."
+    },
+    {
+      "url": "/api/roleaccess/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Update an existing role access entry."
+    },
+    {
+      "url": "/api/roleaccess/users/update_groups",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Update an existing group access entry."
+    },
+    {
+      "url": "/api/roleaccess/users/update_roles",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Update an existing role access entry."
+    },
+    {
+      "url": "/api/roleaccess/user/reset_credentials",
+      "scope": "POST",
+      "allowed_roles": "allinone,RESET_CREDENTIALS",
+      "description": "Reseating existing user credentials."
+    },
+    {
+      "url": "/api/roleaccess/users",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Update the username associated with a specific role access entry."
+    },
+    {
+      "url": "/api/roleaccess/tax_center/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "Create a new tax center entry in the system."
+    },
+    {
+      "url": "/api/roleaccess/tax_center/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "Update the details of an existing tax center."
+    },
+    {
+      "url": "/api/roleaccess/tax_center/delete",
+      "scope": "DELETE",
+      "allowed_roles": "allinone,DELETE_ROLE_ACCESS",
+      "description": "Delete a specific tax center from the system."
+    },
+    {
+      "url": "/api/roleaccess/zone/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "adding new zone"
+    },
+    {
+      "url": "/api/roleaccess/zone/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "update a zone"
+    },
+    {
+      "url": "/api/roleaccess/zone/delete",
+      "scope": "DELETE",
+      "allowed_roles": "allinone,DELETE_ROLE_ACCESS",
+      "description": "fetching one zones"
+    },
+    {
+      "url": "/api/roleaccess/wereda/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "adding new zone"
+    },
+    {
+      "url": "/api/roleaccess/zone/upload-excel-zone",
+      "scope": "POST",
+      "allowed_roles": "allinone,FILE_UPLOAD_ROLE_ACCESS",
+      "description": "adding new zone"
+    },
+    {
+      "url": "/api/roleaccess/wereda/upload-excel-wereda",
+      "scope": "POST",
+      "allowed_roles": "allinone,FILE_UPLOAD_ROLE_ACCESS",
+      "description": "adding new wereda"
+    },
+    {
+      "url": "/api/roleaccess/upload-excel-taxcenter",
+      "scope": "POST",
+      "allowed_roles": "allinone,FILE_UPLOAD_ROLE_ACCESS",
+      "description": "adding new wereda"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/upload-excel-taxauthority",
+      "scope": "POST",
+      "allowed_roles": "allinone,FILE_UPLOAD_ROLE_ACCESS",
+      "description": "adding new wereda"
+    },
+    {
+      "url": "/api/roleaccess/wereda/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "update a wereda"
+    },
+    {
+      "url": "/api/roleaccess/wereda/delete",
+      "scope": "DELETE",
+      "allowed_roles": "allinone,DELETE_ROLE_ACCESS",
+      "description": "fetching one wereda"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/create",
+      "scope": "POST",
+      "allowed_roles": "allinone,CREATE_ROLE_ACCESS",
+      "description": "create tax authority"
+    },
+    {
+      "url": "/api/roleaccess/tax_authority/update",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "EDIT tax authority type"
+    },
+    {
+      "url": "/api/roleaccess/security-questions/get_all",
+      "scope": "GET",
+      "allowed_roles": "allinone,GET_SECURITY_QUESTIONS",
+      "description": "get all security questions"
+    },
+    {
+      "url": "/api/roleaccess/edit_required_actions",
+      "scope": "PUT",
+      "allowed_roles": "allinone,UPDATE_ROLE_ACCESS",
+      "description": "edit required action"
+    },
+    {
+      "url": "/api/roleaccess/security-questions/get_all_by_username",
+      "scope": "GET",
+      "allowed_roles": "allinone,GET_SECURITY_QUESTIONS",
+      "description": "get security quetion by username"
+    },
+    {
+      "url": "/api/roleaccess/security-questions/store",
+      "scope": "POST",
+      "allowed_roles": "allinone,STORE_AND_VERIFY_SECURITY_QUESTIONS",
+      "description": "add new security question"
+    },
+    {
+      "url": "/api/roleaccess/security-questions/verify",
+      "scope": "POST",
+      "allowed_roles": "allinone,STORE_AND_VERIFY_SECURITY_QUESTIONS",
+      "description": "verifysecurity question"
+    },
+    {
+      "url": "/api/roleaccess/users/all_users_np",
+      "scope": "POST",
+      "allowed_roles": "allinone,STORE_AND_VERIFY_SECURITY_QUESTIONS",
+      "description": "fetch all users"
+    }
+  ]
+}
